@@ -1,23 +1,51 @@
 <!DOCTYPE.html>
 <html>
  <head>
+   <!--- Following are the tags and link to add BOOTSTRAP-CSS Framework ---> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> 
+  <style>
+    #banner
+    {
+      width:100%;
+      height:360px;
+      object-fit:cover;
+    }
+  </style>
+   
   <title>Home Page</title>
  </head>
 <body>
-  <h1>Jobian Careers</h1>
-  <img src="https://web-development-in-python.muhammad-saad28.repl.co/static/banner.jpeg" height="300">
+<div class="container">
+  <h1 class="text-center mt-2 mb-4">
+    Jobian Careers
+  </h1>
+  <img class="img-fluid" id="banner" src="https://web-development-in-python.muhammad-saad28.repl.co/static/banner.jpeg" height="300">
  
-  <div>
- <h2>About Jobian</h2>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
- </div>
- 
-  <h2>
+
+ <h2 class="text-center mt-2 mb-4">
+   About Jobian
+ </h2>
+ <p class="lead text-justify-center">
+Lorem Ipsum is simply dummy text of the printing and typesetting 
+industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+ </p>
+</div>
+
+ <div class="text-center">
+  <h2 class="text-center mt-2 mb-4">
     Open Positions
   </h2>
-  <div>
-    <p>To be filled yet</p>
+    
   </div>
-  <div><button>Contact US</button></div>
+  
+  <div class="text-center">
+    <button class="btn btn-primary btn-lg">
+      Contact US
+    </button>
+    <p class="fw-lighter mt-2">Copyright Saad,2023</p>
+  </div>
+  
 </body>
 </html>
