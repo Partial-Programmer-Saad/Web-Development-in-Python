@@ -33,18 +33,29 @@ industry. Lorem Ipsum has been the industry's standard dummy text ever since the
  </p>
 </div>
 
- <div class="text-center">
+<div class="text-center">
   <h2 class="text-center mt-2 mb-4">
     Open Positions
   </h2>
-    
-  </div>
+</div>
+
+    <div>
+      {% for job in jobs%}
+      <h4>{{job['title']}}</h4>
+      <div class="mb-4">
+        Location : {{job['location']}} <br>
+        {% if 'salary' in job%}
+        Salary : {{job['salary']}}
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
   
   <div class="text-center">
     <button class="btn btn-primary btn-lg">
       Contact US
     </button>
-    <p class="fw-lighter mt-2">Copyright Saad,2023</p>
+    <p class="fw-lighter mt-3">Copyright Saad,2023</p>
   </div>
   
 </body>
