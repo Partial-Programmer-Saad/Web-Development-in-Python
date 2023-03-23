@@ -1,5 +1,5 @@
 # Creating a module. A module name must be in lowercase.
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 # jobs Variable to store data about jobs instead of using Database(as of now)
 JOBS = [
    {
@@ -34,6 +34,10 @@ app=Flask(__name__)
 @app.route("/")
 def main_jovian():
   return render_template('home.html', jobs=JOBS)
+
+@app.route("/jobs")
+def jobs_Jsonify():
+  return jsonify(JOBS)
 
 if __name__=='__main__':
   # Access .run command by writing it as it was unaccessible.
