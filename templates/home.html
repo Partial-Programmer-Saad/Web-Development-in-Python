@@ -1,4 +1,4 @@
-<!DOCTYPE.html>
+ <!DOCTYPE.html>
 <html>
  <head>
    <!--- Following are the tags and link to add BOOTSTRAP-CSS Framework ---> 
@@ -31,7 +31,7 @@
 Lorem Ipsum is simply dummy text of the printing and typesetting 
 industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
  </p>
-</div>
+
 
 <div class="text-center">
   <h2 class="text-center mt-2 mb-4">
@@ -39,23 +39,18 @@ industry. Lorem Ipsum has been the industry's standard dummy text ever since the
   </h2>
 </div>
 
-    <div>
-      {% for job in jobs%}
-      <h4>{{job['title']}}</h4>
-      <div class="mb-4">
-        Location : {{job['location']}} <br>
-        {% if 'salary' in job%}
-        Salary : {{job['salary']}}
-        {% endif %}
-      </div>
-      {% endfor %}
-    </div>
+<div>
+  {% for job in jobs%}
+    {% include 'jobsPage.html' %}
+  {% endfor %}
+</div>
   
-  <div class="text-center">
+  <div class="text-center" style="margin-top:12px;">
     <button class="btn btn-primary btn-lg">
       Contact US
     </button>
     <p class="fw-lighter mt-3">Copyright Saad,2023</p>
+  </div>
   </div>
   
 </body>
