@@ -16,7 +16,11 @@
    
   <title>Home Page</title>
  </head>
+<!--- Start of BODY --->  
 <body>
+  <!--- Nav Bar Header --->
+  {% include 'header.html' %}
+  <!--- ************* --->
 <div class="container">
   <h1 class="text-center mt-2 mb-4">
     Jobian Careers
@@ -24,17 +28,21 @@
   <img class="img-fluid" id="banner" src="https://web-development-in-python.muhammad-saad28.repl.co/static/banner.jpeg" height="300">
  
 
- <h2 class="text-center mt-2 mb-4">
+ <h2 class="text-center mt-4 mb-4">
    About Jobian
  </h2>
- <p class="lead text-justify-center">
+<div class="row">
+   <p class="lead text-justify-center col-6">
 Lorem Ipsum is simply dummy text of the printing and typesetting 
 industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
  </p>
+  <img src="https://web-development-in-python.muhammad-saad28.repl.co/static/people.jpg" class="col-6 shadow-lg p-3 mb-5 bg-body rounded" style="border-radius:16px;max-height:360px;">
+  
+</div>
 
 
 <div class="text-center">
-  <h2 class="text-center mt-2 mb-4">
+  <h2 class="text-center mt-4 mb-4">
     Open Positions
   </h2>
 </div>
@@ -49,9 +57,10 @@ industry. Lorem Ipsum has been the industry's standard dummy text ever since the
     <button class="btn btn-primary btn-lg">
       Contact US
     </button>
-    <p class="fw-lighter mt-3">Copyright Saad,2023</p>
   </div>
-  </div>
-  
+</div>
+
+  <!--- Footer --->
+{% include 'footer.html'%}
 </body>
 </html>
